@@ -8,4 +8,5 @@ return {
 	{["Type"]="Miscellaneous",["Image"]="0",["Text"]="Research Points: ",["Value"]="return math.ceil(workspace.CountryData['cnamedat'].Power.Research.Value)"},
 	{["Type"]="Warfare",["Image"]="0",["Text"]="Military Points: ",["Value"]="return math.ceil(workspace.CountryData['cnamedat'].Power.Military.Value)"},
 	{["Type"]="Warfare",["Image"]="0",["Text"]="Manpower: ",["Value"]="return removeComma(math.ceil(workspace.CountryData['cnamedat'].Manpower.Value.X))"},
+	{["Type"]="Player",["Image"]="0",["Text"]="Player XP: ",["Value"]="if game.Players:FindFirstChild(workspace.CountryData['cnamedat'].Leader.Value) return removeComma(math.ceil(game.Players[workspace.CountryData['cnamedat'].Leader.Value].XP.Value)) .. ' XP' else return '0 XP'"},
 }
